@@ -57,7 +57,6 @@ export interface INextOfflineTsConfig extends NextConfig {
 export function withOffline(nextConfig: INextOfflineTsConfig = {}): NextConfig {
   return {
     ...nextConfig,
-    exportPathMap: exportSw(nextConfig),
     webpack(
       config: any,
       context: {
