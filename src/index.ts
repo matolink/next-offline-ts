@@ -3,7 +3,6 @@ import CopyWebpackPlugin from 'copy-webpack-plugin';
 import { readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { cwd } from 'node:process';
-import { exportSw } from './export';
 import { NextConfig } from 'next';
 import { NextConfigComplete } from 'next/dist/server/config-shared';
 import { WebpackGenerateSWOptions, WebpackInjectManifestOptions } from 'workbox-build';
